@@ -310,31 +310,33 @@ int main(int argc, char **argv)
 {
   nttwork_t nttwork;
   mpz_t modulus;
-  uint32_t ntt_size = 1024*3*3*5*5*7*7;
+  uint32_t ntt_size = 1024;
   uint32_t bits = 300;
-  uint32_t sp_bits[4];
-  uint32_t sp_bits_choices = 0;
+  uint32_t sp_bits = 50;
   uint32_t interleaved = 1;
   uint32_t verify = 0;
+  uint32_t sp_bits_choices[4];
+  uint32_t sp_bits_num_choices = 1;
 
-#if GMP_LIMB_BITS == 32
-  sp_bits[0] = 30;
-  sp_bits[1] = 31;
-  sp_bits[2] = 50;
-  sp_bits[3] = 62;
-  sp_bits_choices = 4;
-#else
-  sp_bits[0] = 30;
-  sp_bits[1] = 31;
-  sp_bits[2] = 62;
-  sp_bits_choices = 3;
-#endif
+  if (argc > 0)
+    bits = atoi(argv[1]);
+  if (argc > 1)
+    ntt_size = atoi(argv[2]);
+  if (argc > 2)
+    sp_bits = atoi(argv[3]);
+
+  sp_bits_choices[0] = sp_bits;
+  if (sp_bits == 30)
+    {
+      sp_bits_choices[1] = 31;
+      sp_bits_num_choices++;
+    }
 
   mpz_init_set_ui(modulus, 1);
   mpz_mul_2exp(modulus, modulus, bits);
 
   nttwork = nttwork_init(ntt_size, modulus, interleaved, 
-      			sp_bits, sp_bits_choices);
+      			sp_bits_choices, sp_bits_num_choices);
 
   if (nttwork == NULL)
     {
