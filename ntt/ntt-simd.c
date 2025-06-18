@@ -10,8 +10,10 @@ static const nttconfig_t * ntt_config_simd[] =
   &V(ntt7simd_config),
   &V(ntt8simd_config),
   &V(ntt9simd_config),
+  &V(ntt12simd_config),
   &V(ntt15simd_config),
   &V(ntt16simd_config),
+  &V(ntt20simd_config),
   &V(ntt35simd_config),
   &V(ntt40simd_config),
 };

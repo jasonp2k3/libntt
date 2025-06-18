@@ -166,8 +166,10 @@ extern const nttconfig_t X(ntt5_config);
 extern const nttconfig_t X(ntt7_config);
 extern const nttconfig_t X(ntt8_config);
 extern const nttconfig_t X(ntt9_config);
+extern const nttconfig_t X(ntt12_config);
 extern const nttconfig_t X(ntt15_config);
 extern const nttconfig_t X(ntt16_config);
+extern const nttconfig_t X(ntt20_config);
 extern const nttconfig_t X(ntt35_config);
 extern const nttconfig_t X(ntt40_config);
 

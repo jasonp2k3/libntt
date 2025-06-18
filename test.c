@@ -19,7 +19,7 @@ gcd (unsigned long a, unsigned long b)
 #define NUM_CODELETS (sizeof(codelet_sizes) / sizeof(codelet_sizes[0]))
 
 static const uint32_t codelet_sizes[] = {
-  2, 3, 4, 5, 7, 8, 9, 15, 16, 35, 40,
+  2, 3, 4, 5, 7, 8, 9, 12, 15, 16, 20, 35, 40,
 };
 
 #define MAX_PLAN_GROUPS 4

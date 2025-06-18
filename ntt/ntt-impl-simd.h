@@ -27,8 +27,10 @@ extern const nttconfig_t V(ntt5simd_config);
 extern const nttconfig_t V(ntt7simd_config);
 extern const nttconfig_t V(ntt8simd_config);
 extern const nttconfig_t V(ntt9simd_config);
+extern const nttconfig_t V(ntt12simd_config);
 extern const nttconfig_t V(ntt15simd_config);
 extern const nttconfig_t V(ntt16simd_config);
+extern const nttconfig_t V(ntt20simd_config);
 extern const nttconfig_t V(ntt35simd_config);
 extern const nttconfig_t V(ntt40simd_config);
 

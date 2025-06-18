@@ -27,8 +27,10 @@ NTT_SCALAR_SRC = \
 	core/ntt07.c \
 	core/ntt08.c \
 	core/ntt09.c \
+	core/ntt12.c \
 	core/ntt15.c \
 	core/ntt16.c \
+	core/ntt20.c \
 	core/ntt35.c \
 	core/ntt40.c \
 	ntt/mpzspm.c \
@@ -46,8 +48,10 @@ NTT_SIMD_SRC = \
 	core/ntt07simd.c \
 	core/ntt08simd.c \
 	core/ntt09simd.c \
+	core/ntt12simd.c \
 	core/ntt15simd.c \
 	core/ntt16simd.c \
+	core/ntt20simd.c \
 	core/ntt35simd.c \
 	core/ntt40simd.c \
 	ntt/ntt-simd.c

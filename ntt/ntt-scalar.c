@@ -10,8 +10,10 @@ static const nttconfig_t * ntt_config[] =
   &X(ntt7_config),
   &X(ntt8_config),
   &X(ntt9_config),
+  &X(ntt12_config),
   &X(ntt15_config),
   &X(ntt16_config),
+  &X(ntt20_config),
   &X(ntt35_config),
   &X(ntt40_config),
 };
