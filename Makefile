@@ -101,7 +101,7 @@ w32: $(OBJ_W32)
 	$(CC32) $(CFLAGS) $(OBJ_W32) test.c -o test32 -lgmp -lm
 
 clean:
-	rm -rf $(OBJ_W32) $(OBJ_W64) test32.exe test64.exe ./test
+	rm -rf $(OBJ_W32) $(OBJ_W64) test32.exe test64.exe test32 test64
 
 %.o_w32: %.c $(HDR)
 	$(CC32) $(CFLAGS) -c -o $@ $<

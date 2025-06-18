@@ -266,7 +266,7 @@ mpz_get_sp (const mpz_t n)
 
 #elif SP_NUMB_BITS == 50
 
-  mpz_get_d(n);
+  return mpz_get_d(n);
 
 #else /* 64-bit sp_t */
 
